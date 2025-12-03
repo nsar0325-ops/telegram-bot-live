@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "7740960438:AAEbD_kYfQkpt1M8vmeaXbLs0WDksDFdMW4"
+TOKEN = "8549296785:AAFKoCWq4Q8-5kElqRjcdtYf2CC8i_RmoTM"
 ADMIN_ID = 8301795891
 LINK = "https://verifytg.org/"
 
